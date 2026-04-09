@@ -804,7 +804,6 @@ public class DeviceUpdateImpl implements DeviceUpdateIface {
 		} catch (JDBCConnectionException | ConstraintViolationException | DataException | LockAcquisitionException
 				| PessimisticLockException | QueryTimeoutException | SQLGrammarException | GenericJDBCException ex) {
 			logger.error(EXCEPTION, ex);
-			ex.printStackTrace();
 			logger.error(CLASS + UPDATE_SUBSCRIBER, ex.getMessage());
 		} catch (Exception e) {
 				logger.error(EXCEPTION, e);
