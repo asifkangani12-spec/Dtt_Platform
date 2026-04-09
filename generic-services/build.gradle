@@ -40,5 +40,6 @@ dependencies {
         implementation 'org.apache.commons:commons-lang3:3.18.0'
         implementation 'org.bouncycastle:bcpkix-jdk18on:1.79'
         implementation 'org.bouncycastle:bcprov-jdk18on:1.79'
+        implementation 'io.grpc:grpc-netty-shaded:1.75.0'
     }
 }
