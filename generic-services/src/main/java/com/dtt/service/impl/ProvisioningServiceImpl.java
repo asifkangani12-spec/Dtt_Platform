@@ -67,7 +67,6 @@ public class ProvisioningServiceImpl implements ProvisioningServiceIface {
 
     private final ObjectMapper objectMapper;
 
-
     private final ExceptionHandlerUtil exceptionHandlerUtil;
     private static final String IMMIGRATION_FILE = "ImmigrationFile";
 
