@@ -126,7 +126,6 @@ public class WalletTransactionImpl implements WalletTransactionIface {
 					, e.getMessage());
 			return exceptionHandlerUtil.createErrorResponse(ERROR_SOMETHING_WENT_WRONG);
 		} catch (Exception e) {
-			e.printStackTrace();
 			return exceptionHandlerUtil.createErrorResponse(ERROR_SOMETHING_WENT_WRONG);
 		}
 	}
