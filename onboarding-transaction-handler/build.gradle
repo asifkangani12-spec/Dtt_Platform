@@ -1,0 +1,58 @@
+// Module: onboarding-transaction-handler
+// Responsibility: Orchestration layer — dataframe transactions, MOSIP,
+//                 RA calls, OTP, payment, assisted onboarding, token validation.
+
+
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.3.2'
+    id 'io.spring.dependency-management' version '1.1.5'
+}
+
+group = 'ug.daes'
+version = '1.0.0'
+
+bootJar {
+    enabled = true
+}
+
+jar {
+    enabled = true   // optional (keep if you want library also)
+}
+
+bootRun {
+    mainClass = 'ug.daes.OnBoardingTransactionHandler.OnBoardingTransactionHandlerApplication'
+}
+
+//tasks.matching { it.name == 'bootJar' }.configureEach { enabled = false }
+//jar     { enabled = true  }
+
+dependencies {
+   // implementation project(':common')
+    implementation(project(':common')) {
+        exclude group: 'org.springframework.cloud'
+    }
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    //implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    //implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    implementation 'com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.5'
+
+    implementation 'org.apache.httpcomponents:httpclient:4.5.14'
+    implementation 'org.apache.httpcomponents.client5:httpclient5'
+    implementation 'org.apache.httpcomponents.core5:httpcore5'
+
+    //implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
+    //implementation 'org.hibernate.validator:hibernate-validator:8.0.1.Final'
+    //implementation 'jakarta.el:jakarta.el-api:5.0.1'
+    implementation 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+
+    //implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.14'
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0'
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+}

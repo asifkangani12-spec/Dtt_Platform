@@ -1,0 +1,9 @@
+rootProject.name = 'dtt-platform'
+
+include ':common'
+include ':generic-services'
+include ':onboarding'
+include ':registration-authority'
+include ':organization'
+include ':onboarding-transaction-handler'
+include ':app'

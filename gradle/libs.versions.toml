@@ -1,0 +1,134 @@
+[versions]
+spring-boot            = "3.5.10"
+spring-dependency-mgmt = "1.1.7"
+spring-cloud           = "2024.0.0"
+java                   = "21"
+
+# Web & Server
+undertow               = "2.3.21.Final"
+
+# Database
+postgresql             = "42.7.3"
+hibernate              = "6.4.4.Final"
+
+# HTTP Clients
+httpclient5            = "5.4.3"
+httpclient4            = "4.5.14"
+httpclient5core        = "5.3"
+
+# Jackson
+jackson                = "2.18.6"
+
+# Security & Encryption
+jasypt                 = "3.0.5"
+bouncycastle           = "1.79"
+java-jwt               = "3.9.0"
+
+# Firebase / Push
+firebase-admin         = "9.3.0"
+
+# API Docs
+springdoc              = "2.8.14"
+
+# Messaging
+spring-kafka           = "3.2.0"
+
+# Storage & Files
+minio                  = "8.6.0"
+pdfbox                 = "3.0.2"
+commons-io             = "2.15.1"
+commons-lang3          = "3.18.0"
+commons-fileupload     = "1.6.0"
+
+# Image processing
+imgscalr               = "4.2"
+
+# Utilities
+jsch                   = "0.1.55"
+classgraph             = "4.8.150"
+json                   = "20240303"
+sentry                 = "7.16.0"
+
+# Netty (transitive overrides)
+netty-handler          = "4.1.118.Final"
+netty-codec            = "4.1.125.Final"
+netty-codec-http       = "4.1.129.Final"
+grpc-netty             = "1.75.0"
+protobuf               = "3.25.5"
+
+# Spring framework overrides
+spring-framework       = "6.2.11"
+
+[libraries]
+# Spring Boot Starters
+spring-boot-starter              = { module = "org.springframework.boot:spring-boot-starter" }
+spring-boot-web                  = { module = "org.springframework.boot:spring-boot-starter-web" }
+spring-boot-data-jpa             = { module = "org.springframework.boot:spring-boot-starter-data-jpa" }
+spring-boot-security             = { module = "org.springframework.boot:spring-boot-starter-security" }
+spring-boot-actuator             = { module = "org.springframework.boot:spring-boot-starter-actuator" }
+spring-boot-validation           = { module = "org.springframework.boot:spring-boot-starter-validation" }
+spring-boot-mail                 = { module = "org.springframework.boot:spring-boot-starter-mail" }
+spring-boot-devtools             = { module = "org.springframework.boot:spring-boot-devtools" }
+spring-boot-test                 = { module = "org.springframework.boot:spring-boot-starter-test" }
+spring-boot-undertow             = { module = "org.springframework.boot:spring-boot-starter-undertow" }
+
+# Spring Cloud / Vault
+spring-vault-config              = { module = "org.springframework.cloud:spring-cloud-starter-vault-config" }
+spring-vault-core                = { module = "org.springframework.vault:spring-vault-core" }
+
+# Kafka
+spring-kafka                     = { module = "org.springframework.kafka:spring-kafka" }
+
+# Database
+postgresql                       = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
+hibernate-core                   = { module = "org.hibernate.orm:hibernate-core", version.ref = "hibernate" }
+
+# HTTP Clients
+httpclient5                      = { module = "org.apache.httpcomponents.client5:httpclient5", version.ref = "httpclient5" }
+httpclient4                      = { module = "org.apache.httpcomponents:httpclient", version.ref = "httpclient4" }
+httpcore5                        = { module = "org.apache.httpcomponents.core5:httpcore5", version.ref = "httpclient5core" }
+
+# Jackson
+jackson-databind                 = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
+jackson-core                     = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson" }
+jackson-annotations              = { module = "com.fasterxml.jackson.core:jackson-annotations", version.ref = "jackson" }
+
+# Security
+jasypt                           = { module = "com.github.ulisesbocchio:jasypt-spring-boot-starter", version.ref = "jasypt" }
+bouncycastle-pkix                = { module = "org.bouncycastle:bcpkix-jdk18on", version.ref = "bouncycastle" }
+bouncycastle-provider            = { module = "org.bouncycastle:bcprov-jdk18on", version.ref = "bouncycastle" }
+java-jwt                         = { module = "com.auth0:java-jwt", version.ref = "java-jwt" }
+
+# Firebase
+firebase-admin                   = { module = "com.google.firebase:firebase-admin", version.ref = "firebase-admin" }
+
+# API Docs
+springdoc-openapi                = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref = "springdoc" }
+
+# Storage
+minio                            = { module = "io.minio:minio", version.ref = "minio" }
+
+# Files & PDF
+pdfbox                           = { module = "org.apache.pdfbox:pdfbox", version.ref = "pdfbox" }
+commons-io                       = { module = "commons-io:commons-io", version.ref = "commons-io" }
+commons-lang3                    = { module = "org.apache.commons:commons-lang3", version.ref = "commons-lang3" }
+commons-fileupload               = { module = "commons-fileupload:commons-fileupload", version.ref = "commons-fileupload" }
+
+# Image
+imgscalr                         = { module = "org.imgscalr:imgscalr-lib", version.ref = "imgscalr" }
+
+# Utilities
+jsch                             = { module = "com.jcraft:jsch", version.ref = "jsch" }
+classgraph                       = { module = "io.github.classgraph:classgraph", version.ref = "classgraph" }
+json                             = { module = "org.json:json", version.ref = "json" }
+sentry                           = { module = "io.sentry:sentry-spring-boot-starter-jakarta", version.ref = "sentry" }
+
+# Jakarta
+jakarta-validation               = { module = "jakarta.validation:jakarta.validation-api", version = "3.0.2" }
+jakarta-servlet                  = { module = "jakarta.servlet:jakarta.servlet-api", version = "6.0.0" }
+jakarta-el                       = { module = "jakarta.el:jakarta.el-api", version = "5.0.1" }
+hibernate-validator              = { module = "org.hibernate.validator:hibernate-validator", version = "8.0.1.Final" }
+
+[plugins]
+spring-boot       = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency = { id = "io.spring.dependency-management", version.ref = "spring-dependency-mgmt" }

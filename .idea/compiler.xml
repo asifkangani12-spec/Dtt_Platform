@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="21" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dtt-platform.app" options="-parameters" />
+      <module name="dtt-platform.app.main" options="-parameters" />
+      <module name="dtt-platform.app.test" options="-parameters" />
+      <module name="dtt-platform.common" options="-parameters" />
+      <module name="dtt-platform.common.main" options="-parameters" />
+      <module name="dtt-platform.common.test" options="-parameters" />
+      <module name="dtt-platform.generic-services" options="-parameters" />
+      <module name="dtt-platform.generic-services.main" options="-parameters" />
+      <module name="dtt-platform.generic-services.test" options="-parameters" />
+      <module name="dtt-platform.onboarding" options="-parameters" />
+      <module name="dtt-platform.onboarding-transaction-handler" options="-parameters" />
+      <module name="dtt-platform.onboarding-transaction-handler.main" options="-parameters" />
+      <module name="dtt-platform.onboarding-transaction-handler.test" options="-parameters" />
+      <module name="dtt-platform.onboarding.main" options="-parameters" />
+      <module name="dtt-platform.onboarding.test" options="-parameters" />
+      <module name="dtt-platform.organization" options="-parameters" />
+      <module name="dtt-platform.organization.main" options="-parameters" />
+      <module name="dtt-platform.organization.test" options="-parameters" />
+      <module name="dtt-platform.registration-authority" options="-parameters" />
+      <module name="dtt-platform.registration-authority.main" options="-parameters" />
+      <module name="dtt-platform.registration-authority.test" options="-parameters" />
+    </option>
+  </component>
+</project>

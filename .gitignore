@@ -1,0 +1,8 @@
+# Secrets
+*.json
+*.properties
+
+# Ignore build files
+/build/
+*.jar
+*.log

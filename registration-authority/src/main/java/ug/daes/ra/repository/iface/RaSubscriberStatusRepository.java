@@ -1,0 +1,30 @@
+/*
+ * @copyright (DigitalTrust Technologies Private Limited, Hyderabad) 2021,
+ * All rights reserved.
+ */
+package ug.daes.ra.repository.iface;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import ug.daes.ra.model.RASubscriberStatusModel;
+
+/**
+ * The Interface SubscriberStatusRepository.
+ */
+@Repository
+public interface RaSubscriberStatusRepository extends JpaRepository<RASubscriberStatusModel, String> {
+
+
+		RASubscriberStatusModel findBysubscriberUid(String subscriberUniqueId);
+
+		@Query("SELECT COUNT(s.subscriberUid) FROM RASubscriberStatusModel s")
+		int getSubscriberCount();
+
+		@Query("SELECT COUNT(s.subscriberUid) FROM RASubscriberStatusModel s WHERE s.subscriberStatus = 'ACTIVE'")
+		int getActiveSubscriberCount();
+
+		@Query("SELECT COUNT(s.subscriberUid) FROM RASubscriberStatusModel s WHERE s.subscriberStatus = 'DISABLED'")
+		int getInActiveSubscriberCount();
+	}

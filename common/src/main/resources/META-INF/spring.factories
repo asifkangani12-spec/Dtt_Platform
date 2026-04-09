@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.dtt.common.config.PlatformAppConfiguration,\
+  com.dtt.common.config.PlatformHttpConfig,\
+  com.dtt.common.config.PlatformJasyptConfig

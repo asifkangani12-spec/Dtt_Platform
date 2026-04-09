@@ -1,0 +1,44 @@
+// Module: generic-services
+// Responsibility: App-config, Card, Consent, Wallet, Provisioning,
+//                 Firebase push notifications, PDF generation, Kafka logging.
+
+tasks.matching { it.name == 'bootJar' }.configureEach { enabled = false }
+jar     { enabled = true  }
+
+dependencies {
+    implementation project(':common')
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //implementation fileTree('libs/DAESLogIntegrity.jar')
+    //implementation files('libs/DAESLogIntegrity.jar')
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation('org.springframework.boot:spring-boot-starter-web') {
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+    }
+    implementation 'org.springframework.boot:spring-boot-starter-undertow'
+
+    implementation 'org.springframework.cloud:spring-cloud-starter-vault-config'
+    implementation 'org.springframework.vault:spring-vault-core'
+
+    implementation 'org.springframework.kafka:spring-kafka'
+
+    implementation 'com.google.firebase:firebase-admin:9.3.0'
+    implementation 'org.apache.pdfbox:pdfbox:3.0.2'
+    implementation 'org.json:json:20240303'
+//    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.14'
+
+    runtimeOnly 'org.postgresql:postgresql'
+
+    constraints {
+        implementation 'io.undertow:undertow-core:2.3.21.Final'
+        implementation 'com.fasterxml.jackson.core:jackson-core:2.18.6'
+        implementation 'io.netty:netty-handler:4.1.118.Final'
+        implementation 'io.netty:netty-codec:4.1.125.Final'
+        implementation 'io.netty:netty-codec-http:4.1.129.Final'
+        implementation 'com.google.protobuf:protobuf-java:3.25.5'
+        implementation 'org.apache.commons:commons-lang3:3.18.0'
+        implementation 'org.bouncycastle:bcpkix-jdk18on:1.79'
+        implementation 'org.bouncycastle:bcprov-jdk18on:1.79'
+    }
+}
