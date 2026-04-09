@@ -304,7 +304,6 @@ public class DataFrameService {
 				return r;
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
 			System.out.println(e);
 			System.out.println(e.getCause());
 			throw new Exception(e);
