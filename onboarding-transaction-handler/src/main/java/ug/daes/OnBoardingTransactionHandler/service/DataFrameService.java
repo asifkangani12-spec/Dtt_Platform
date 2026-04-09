@@ -228,8 +228,6 @@ public class DataFrameService {
 					null
 			);
 		} catch (Exception e) {
-
-			e.printStackTrace();
 			final String errCode = ErrorCode.getOrDefault("EXCEPTION_AppConfigService","104120");
 			return AppUtil.createApiResponse(false, "Something went wrong.Please try after (" + errCode + ")",
 					(Object) null);
