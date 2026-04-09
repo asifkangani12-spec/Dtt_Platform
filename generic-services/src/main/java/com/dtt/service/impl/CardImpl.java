@@ -400,7 +400,6 @@ public class CardImpl implements CardIface {
 				return exceptionHandlerUtil.createSuccessResponse("api.response.pid.fetched", cardResponseDTO);
 			}
 		} catch (Exception e) {
-			e.printStackTrace();
 			return exceptionHandlerUtil.createErrorResponse( "api.error.something.went.wrong");
 		}
 	}
