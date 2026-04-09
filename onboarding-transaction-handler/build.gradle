@@ -63,5 +63,12 @@ dependencies {
         implementation 'org.apache.tomcat:tomcat-catalina:10.1.52'
         implementation 'org.apache.tomcat:tomcat-util:10.1.52'
         implementation 'org.apache.tomcat.embed:tomcat-embed-websocket:10.1.52'
+
+        implementation 'org.springframework:spring-core:6.2.17'
+        implementation 'org.springframework:spring-webmvc:6.2.17'
+        implementation 'org.springframework:spring-web:6.2.17'
+        implementation 'org.springframework:spring-beans:6.2.17'
+        implementation 'org.springframework:spring-expression:6.2.17'
+        implementation 'org.springframework:spring-context:6.2.17
     }
 }
