@@ -31,7 +31,7 @@ dependencies {
     runtimeOnly 'org.postgresql:postgresql'
 
     constraints {
-        implementation 'io.undertow:undertow-core:2.3.21.Final'
+        implementation 'io.undertow:undertow-core:2.3.23'
         implementation 'com.fasterxml.jackson.core:jackson-core:2.18.6'
         implementation 'io.netty:netty-handler:4.1.118.Final'
         implementation 'io.netty:netty-codec:4.1.125.Final'
