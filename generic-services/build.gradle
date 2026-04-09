@@ -41,5 +41,6 @@ dependencies {
         implementation 'org.bouncycastle:bcpkix-jdk18on:1.79'
         implementation 'org.bouncycastle:bcprov-jdk18on:1.79'
         implementation 'io.grpc:grpc-netty-shaded:1.75.0'
+        implementation 'com.google.cloud:google-cloud-storage:2.63.0'
     }
 }
