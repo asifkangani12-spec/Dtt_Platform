@@ -66,7 +66,6 @@ public class LogModelServiceImpl implements LogModelServiceIface {
 			mqSender.send(log);
 			logger.info(CLASS + " setLogModel log {}",logModel );
 		} catch (Exception e) {
-			e.printStackTrace();
 			logger.error(CLASS + " setLogModel Exception  {]", e.getMessage() );
 		}
 	}
