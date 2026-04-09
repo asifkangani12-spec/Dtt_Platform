@@ -85,11 +85,11 @@ public class PriceModelService {
 			e.printStackTrace();
 			return exceptionHandlerUtil.handleResourceAccessException(e);
 		} catch (Exception e) {
-			e.printStackTrace();
 			return ExceptionHandlerUtil.handleGenericException(e);
 		}
 	}
 
+	
 	public ApiResponse getRemCredits(HttpHeaders httpHeaders,Object o) {
 		ResponseEntity<ApiResponse> res = null;
 		try {
