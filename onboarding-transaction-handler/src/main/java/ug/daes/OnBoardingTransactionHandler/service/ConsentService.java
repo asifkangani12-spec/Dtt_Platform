@@ -77,7 +77,6 @@ public class ConsentService {
             return exceptionHandlerUtil.handleResponse(res);
 
 		} catch (HttpClientErrorException | HttpServerErrorException e) {
-            e.printStackTrace();
 			return exceptionHandlerUtil.handleHttpException(e);
 		} catch (ResourceAccessException e) {e.printStackTrace();
 			return exceptionHandlerUtil.handleResourceAccessException(e);
