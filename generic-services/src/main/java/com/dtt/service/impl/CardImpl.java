@@ -272,7 +272,6 @@ public class CardImpl implements CardIface {
 				return "";
 			}
 		}catch (Exception e){
-			e.printStackTrace();
 			return "";
 		}
 
