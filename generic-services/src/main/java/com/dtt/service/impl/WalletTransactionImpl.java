@@ -121,7 +121,6 @@ public class WalletTransactionImpl implements WalletTransactionIface {
 			
 		} catch (JDBCConnectionException | ConstraintViolationException | DataException | LockAcquisitionException
 				| PessimisticLockException | QueryTimeoutException | SQLGrammarException | GenericJDBCException e) {
-			e.printStackTrace();
 			logger.error(CLASS + "addWalletTransaction Exception Something went Wrong, Onboarding Failed :{}"
 					, e.getMessage());
 			return exceptionHandlerUtil.createErrorResponse(ERROR_SOMETHING_WENT_WRONG);
