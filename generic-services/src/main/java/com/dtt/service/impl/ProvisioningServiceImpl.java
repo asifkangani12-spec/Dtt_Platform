@@ -294,7 +294,6 @@ public class ProvisioningServiceImpl implements ProvisioningServiceIface {
             };
 
         } catch (Exception e) {
-            e.printStackTrace();
             return exceptionHandlerUtil.createErrorResponse(SOMETHING_WENT_WRONG);
         }
     }
