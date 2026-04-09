@@ -37,6 +37,16 @@ subprojects {
 
     dependencies {
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+        // Version constraints for Spring dependencies
+    constraints {
+        implementation 'org.springframework:spring-core:6.2.11'
+        implementation 'org.springframework:spring-webmvc:6.2.11'
+        implementation 'org.springframework:spring-web:6.2.11'
+        implementation 'org.springframework:spring-beans:6.2.11'
+        implementation 'org.springframework:spring-expression:6.2.11'
+        implementation 'org.springframework:spring-context:6.2.11'
+      }
     }
 
     tasks.withType(Test).configureEach {
