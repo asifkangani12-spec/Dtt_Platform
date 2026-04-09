@@ -147,7 +147,7 @@ public class LogModelServiceImpl implements LogModelServiceIface {
 			LogModelDTO log = objectMapper.readValue(push, LogModelDTO.class);
 			mqSender.send(log);
 		} catch (Exception e) {
-			e.printStackTrace();
+			// catch
 		}
 	}
 
