@@ -270,7 +270,6 @@ public class ExceptionHandlerUtil {
     }
 
     public static ApiResponse handleGenericException(Exception e) {
-        e.printStackTrace();
 
         return AppUtil.createApiResponse(
                 false,
