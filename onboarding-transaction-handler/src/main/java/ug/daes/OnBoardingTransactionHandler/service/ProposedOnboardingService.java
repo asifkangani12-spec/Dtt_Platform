@@ -32,7 +32,6 @@ public class    ProposedOnboardingService {
     private final RestTemplate restTemplate;
 
 
-
     private static Logger logger = LoggerFactory.getLogger(ProposedOnboardingService.class);
 
     /** The Constant CLASS. */
