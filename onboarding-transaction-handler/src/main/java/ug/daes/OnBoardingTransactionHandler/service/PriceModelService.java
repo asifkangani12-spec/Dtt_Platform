@@ -79,10 +79,8 @@ public class PriceModelService {
 			return exceptionHandlerUtil.handleResponse(res);
 
 		} catch (HttpClientErrorException | HttpServerErrorException e) {
-			e.printStackTrace();
 			return exceptionHandlerUtil.handleHttpException(e);
 		} catch (ResourceAccessException e) {
-			e.printStackTrace();
 			return exceptionHandlerUtil.handleResourceAccessException(e);
 		} catch (Exception e) {
 			return ExceptionHandlerUtil.handleGenericException(e);
