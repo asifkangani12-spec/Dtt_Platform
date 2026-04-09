@@ -162,7 +162,6 @@ public class AppServiceImpl implements AppserviceInf {
 
 		} catch (JDBCConnectionException | ConstraintViolationException | DataException | LockAcquisitionException
 				| PessimisticLockException | QueryTimeoutException | SQLGrammarException | GenericJDBCException ex) {
-			ex.printStackTrace();
 			return exceptionHandlerUtil.handleException(ex);
 		} catch (Exception e) {
 			return exceptionHandlerUtil.handleException(e);
