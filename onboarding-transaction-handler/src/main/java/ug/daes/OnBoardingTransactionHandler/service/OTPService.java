@@ -129,13 +129,10 @@ public class OTPService {
 					ApiResponse.class);
 			return exceptionHandlerUtil.handleResponse(res);
 		} catch (HttpClientErrorException | HttpServerErrorException e) {
-			e.printStackTrace();
 			return exceptionHandlerUtil.handleHttpException(e);
 		} catch (ResourceAccessException e) {
-			e.printStackTrace();
 			return exceptionHandlerUtil.handleResourceAccessException(e);
 		} catch (Exception e) {
-			e.printStackTrace();
 			return ExceptionHandlerUtil.handleGenericException(e);
 		}
 	}
@@ -283,13 +280,10 @@ public class OTPService {
 
 			return exceptionHandlerUtil.handleResponse(res);
 		} catch (HttpClientErrorException | HttpServerErrorException e) {
-			e.printStackTrace();
 			return exceptionHandlerUtil.handleHttpException(e);
 		} catch (ResourceAccessException e) {
-			e.printStackTrace();
 			return exceptionHandlerUtil.handleResourceAccessException(e);
 		} catch (Exception e) {
-			e.printStackTrace();
 			return ExceptionHandlerUtil.handleGenericException(e);
 		}
 	}
@@ -334,7 +328,6 @@ public class OTPService {
 					ApiResponse.class);
 			return exceptionHandlerUtil.handleResponse(res);
 		} catch (HttpClientErrorException |HttpServerErrorException e) {
-			e.printStackTrace();
 			return exceptionHandlerUtil.handleHttpException(e);
 		} catch (ResourceAccessException e) {
 			return exceptionHandlerUtil.handleResourceAccessException(e);
