@@ -55,4 +55,13 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+
+    // Version constraints for Tomcat dependencies to fix security vulnerabilities
+    constraints {
+        implementation 'org.apache.tomcat.embed:tomcat-embed-core:10.1.52'
+        implementation 'org.apache.tomcat:tomcat-coyote:10.1.52'
+        implementation 'org.apache.tomcat:tomcat-catalina:10.1.52'
+        implementation 'org.apache.tomcat:tomcat-util:10.1.52'
+        implementation 'org.apache.tomcat.embed:tomcat-embed-websocket:10.1.52'
+    }
 }
