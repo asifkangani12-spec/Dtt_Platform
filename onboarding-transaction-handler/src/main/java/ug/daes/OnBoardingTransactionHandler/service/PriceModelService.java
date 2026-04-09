@@ -16,7 +16,6 @@ import org.springframework.web.client.RestTemplate;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-
 import ug.daes.OnBoardingTransactionHandler.conf.TxHandlerPropertiesConfiguration;
 import ug.daes.OnBoardingTransactionHandler.dto.template.GetPriceSlabOrg;
 import ug.daes.OnBoardingTransactionHandler.dto.template.PricingSlabDefinitions;
