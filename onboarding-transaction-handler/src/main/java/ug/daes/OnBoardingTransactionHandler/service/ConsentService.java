@@ -78,9 +78,9 @@ public class ConsentService {
 
 		} catch (HttpClientErrorException | HttpServerErrorException e) {
 			return exceptionHandlerUtil.handleHttpException(e);
-		} catch (ResourceAccessException e) {e.printStackTrace();
+		} catch (ResourceAccessException e) {
 			return exceptionHandlerUtil.handleResourceAccessException(e);
-		} catch (Exception e) {e.printStackTrace();
+		} catch (Exception e) {
 			return ExceptionHandlerUtil.handleGenericException(e);
 		}
 	}
@@ -105,11 +105,11 @@ public class ConsentService {
             System.out.println("Reponse::"+res);
             return exceptionHandlerUtil.handleResponse(res);
 
-		} catch (HttpClientErrorException | HttpServerErrorException e) {e.printStackTrace();
+		} catch (HttpClientErrorException | HttpServerErrorException e) {
 			return exceptionHandlerUtil.handleHttpException(e);
-		} catch (ResourceAccessException e) {e.printStackTrace();
+		} catch (ResourceAccessException e) {
 			return exceptionHandlerUtil.handleResourceAccessException(e);
-		} catch (Exception e) {e.printStackTrace();
+		} catch (Exception e) {
 			return ExceptionHandlerUtil.handleGenericException(e);
 		}
     }
@@ -128,9 +128,9 @@ public class ConsentService {
 
 		} catch (HttpClientErrorException | HttpServerErrorException e) {
 			return exceptionHandlerUtil.handleHttpException(e);
-		} catch (ResourceAccessException e) {e.printStackTrace();
+		} catch (ResourceAccessException e) {
 			return exceptionHandlerUtil.handleResourceAccessException(e);
-		} catch (Exception e) {e.printStackTrace();
+		} catch (Exception e) {
 			return ExceptionHandlerUtil.handleGenericException(e);
 		}
     }
@@ -147,11 +147,11 @@ public class ConsentService {
             res = restTemplate.exchange(url, HttpMethod.GET, requestEntity, ApiResponse.class);
             return exceptionHandlerUtil.handleResponse(res);
 
-		} catch (HttpClientErrorException | HttpServerErrorException e) {e.printStackTrace();
+		} catch (HttpClientErrorException | HttpServerErrorException e) {
 			return exceptionHandlerUtil.handleHttpException(e);
-		} catch (ResourceAccessException e) {e.printStackTrace();
+		} catch (ResourceAccessException e) {
 			return exceptionHandlerUtil.handleResourceAccessException(e);
-		} catch (Exception e) {e.printStackTrace();
+		} catch (Exception e) {
 			return ExceptionHandlerUtil.handleGenericException(e);
 		}
     }
@@ -168,11 +168,11 @@ public class ConsentService {
             res = restTemplate.exchange(url, HttpMethod.GET, requestEntity, ApiResponse.class);
             return exceptionHandlerUtil.handleResponse(res);
 
-		} catch (HttpClientErrorException | HttpServerErrorException e) {e.printStackTrace();
+		} catch (HttpClientErrorException | HttpServerErrorException e) {
 			return exceptionHandlerUtil.handleHttpException(e);
-		} catch (ResourceAccessException e) {e.printStackTrace();
+		} catch (ResourceAccessException e) {
 			return exceptionHandlerUtil.handleResourceAccessException(e);
-		} catch (Exception e) {e.printStackTrace();
+		} catch (Exception e) {
 			return ExceptionHandlerUtil.handleGenericException(e);
 		}
     }
