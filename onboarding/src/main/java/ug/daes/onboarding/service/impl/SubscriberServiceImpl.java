@@ -787,7 +787,6 @@ public class SubscriberServiceImpl implements SubscriberServiceIface {
                             new RegisterFaceWorkerThread(registerFaceURL, faceFeaturesDto);
                     executor1.execute(registerFaceWorkerThread);
                 } catch (Exception e) {
-                    e.printStackTrace();
                 } finally {
                     shutdownExecutor(executor1);
                 }
@@ -2866,7 +2865,6 @@ public class SubscriberServiceImpl implements SubscriberServiceIface {
             return true;
 
         } catch (Exception e) {
-            e.printStackTrace();
             logger.info("{} sendOtpEmail :: {}" ,CLASS, e.getMessage());
             return false;
         }
