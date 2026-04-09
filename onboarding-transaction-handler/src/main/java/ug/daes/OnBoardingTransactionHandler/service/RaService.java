@@ -230,11 +230,11 @@ public class RaService {
 			e.printStackTrace();
 			return exceptionHandlerUtil.handleResourceAccessException(e);
 		} catch (Exception e) {
-			e.printStackTrace();
 			return ExceptionHandlerUtil.handleGenericException(e);
 		}
 	}
 
+	
 	public ApiResponse cancelSetPinFromSMA(HttpHeaders httpHeaders,Object o) throws Exception {
 		ResponseEntity<ApiResponse> res = null;
 		try {
