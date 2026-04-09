@@ -638,7 +638,7 @@ public class SubscriberServiceImpl implements SubscriberServiceIface {
                     onboardingData.setUaeKycId(uaeKycId);
                     // documents -> personFace
                     photo = dataNode.path("Documents").path("PersonFace").asText(null);
-                    // ✅ generate hash using Data json
+                    // generate hash using Data json
                     String hash = AppUtil.hmacSha256Base64(root.toString());
 
                     onboardingData.setDocumentResponseHash(hash);
