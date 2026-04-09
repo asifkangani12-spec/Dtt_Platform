@@ -3961,7 +3961,6 @@ private ApiResponse validateGenderAndDOB(SubscriberObData subscriberObData,
             helper.addInline("logoImage", image);
             mailSender.send(message);
         } catch (Exception e) {
-            e.printStackTrace();
             logger.info("{} deviceUpdatedSendEmail :: {}",CLASS ,e.getMessage());
         }
     }
