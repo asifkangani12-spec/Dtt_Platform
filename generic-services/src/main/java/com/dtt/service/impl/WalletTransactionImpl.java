@@ -39,7 +39,6 @@ public class WalletTransactionImpl implements WalletTransactionIface {
 	/** The Constant CLASS. */
 	 static final String CLASS = "VarifyCredentialsImpl";
 
-
 	private final ExceptionHandlerUtil exceptionHandlerUtil;
 	private final GenericSubscriberRepo subscriberRepoIface;
 	private final LogModelServiceImpl logModelService;
