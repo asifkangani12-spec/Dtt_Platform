@@ -108,7 +108,6 @@ public class CardImpl implements CardIface {
 
 			return rootNode.path("result").asText();
 		} catch (Exception e) {
-			e.printStackTrace();
 			return "";
 		}
 	}
@@ -237,7 +236,6 @@ public class CardImpl implements CardIface {
 			Date parsedDate = originalFormat.parse(date);
 			return targetFormat.format(parsedDate);
 		} catch (ParseException e) {
-			e.printStackTrace();
 			return date;
 		}
 	}
