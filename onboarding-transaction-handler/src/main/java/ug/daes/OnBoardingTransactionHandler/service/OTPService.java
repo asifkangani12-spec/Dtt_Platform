@@ -340,7 +340,6 @@ public class OTPService {
 			e.printStackTrace();
 			return exceptionHandlerUtil.handleResourceAccessException(e);
 		} catch (Exception e) {
-			e.printStackTrace();
 			return ExceptionHandlerUtil.handleGenericException(e);
 		}
 	}
