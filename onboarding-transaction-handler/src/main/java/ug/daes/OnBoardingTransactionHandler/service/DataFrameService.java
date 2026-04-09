@@ -178,7 +178,6 @@ public class DataFrameService {
 				return res.getBody();
 			}
 		} catch (IllegalArgumentException e) {
-			e.printStackTrace();
 			final String errCode = ErrorCode.getOrDefault("Illegal Argument Exception_AppConfig-service","104120");
 
 			return AppUtil.createApiResponse(
@@ -192,7 +191,6 @@ public class DataFrameService {
 			);
 
 		} catch (IllegalStateException e) {
-			e.printStackTrace();
 			final String errCode = ErrorCode.getOrDefault("Illegal State Exception_AppConfig-service","104115");
 			return AppUtil.createApiResponse(
 					false,
@@ -204,7 +202,6 @@ public class DataFrameService {
 					null
 			);
 		} catch (NullPointerException e) {
-			e.printStackTrace();
 			final String errCode = ErrorCode.getOrDefault("Null pointer Exception_AppConfig-service","104118");
 			return AppUtil.createApiResponse(
 					false,
@@ -216,7 +213,6 @@ public class DataFrameService {
 					null
 			);
 		} catch (HttpClientErrorException | HttpServerErrorException e) {
-			e.printStackTrace();
 			final String errCode = ErrorCode.getOrDefault("Not Found","104044");
 			return AppUtil.createApiResponse(
 					false,
