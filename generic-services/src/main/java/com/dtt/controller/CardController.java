@@ -20,7 +20,6 @@ public class CardController {
 		try {
 			return cardIface.getPidByIdDocNumber(idDocNumber);
 		} catch (Exception e) {
-			e.printStackTrace();
 			return AppUtil.createApiResponse(false, "Something went wrong", null);
 		}
 	}
