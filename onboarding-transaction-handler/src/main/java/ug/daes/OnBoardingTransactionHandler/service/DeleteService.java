@@ -77,7 +77,6 @@ public class DeleteService {
 			return exceptionHandlerUtil.handleResponse(res);
 
 		} catch (HttpClientErrorException | HttpServerErrorException e) {
-			e.printStackTrace();
 			return exceptionHandlerUtil.handleHttpException(e);
 		} catch (ResourceAccessException e) {
 			return exceptionHandlerUtil.handleResourceAccessException(e);
